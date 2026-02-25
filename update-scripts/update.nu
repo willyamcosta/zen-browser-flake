@@ -20,8 +20,8 @@ export def generate_sources []: nothing -> record {
   let tag = get_latest_release "zen-browser/desktop"
   let prev_sources: record = open ./sources.json
 
-  let x86_64_url_tw = $"https://github.com/zen-browser/desktop/releases/download/twilight/zen.linux-x86_64.tar.xz"
-  let aarch64_url_tw = $"https://github.com/zen-browser/desktop/releases/download/twilight/zen.linux-aarch64.tar.xz"
+  let x86_64_url_tw = $"https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-x86_64.tar.xz"
+  let aarch64_url_tw = $"https://github.com/zen-browser/desktop/releases/download/twilight-1/zen.linux-aarch64.tar.xz"
   let sourcesTw = {
 	version: "twilight"
 	x86_64-linux: {
